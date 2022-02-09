@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+#profile{
+    top: 10px;
+    left: 10px;
+    position:absolute;
+    border: solid black 3px;
+    width: 84em;
+    height: 40em;
+}
+
+#img{
+    position: absolute;
+    /* display: flex; */
+    border: 1px black solid;
+    top: 5%;
+    left: 1%;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-radius: 18em;
+    border: solid rgb(10,100,200);
+    background: url(pycharm.svg);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    cursor: pointer;
+}
+#name{
+    cursor: default;
+    position: absolute;
+    left: 500px;
+    width: 800px;
+    height: 100px;
+    top: 50px;
+    color: white;
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 10px;
+    /* text-shadow: 0 0 1em rgb(0,10,100),0 0 0.125em currentColor; */
+}

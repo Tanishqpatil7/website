@@ -9,8 +9,7 @@
 body
 {
     min-height: 100vh;
-    background: #fff;
-
+    background: rgb(0,0,10);
 }
 .navigation
 {
@@ -19,10 +18,8 @@ body
     left: 20px;
     bottom: 20px;
     width: 300px;
-    border-radius: 10px;
     box-sizing: initial;
-    border-left: 5px solid #4d5bf9;
-    background: #4d5bf9;
+    border-left: 5px solid rgb(10,100,200);
     transition: width 0.5s;
 }
 .navigation ul
