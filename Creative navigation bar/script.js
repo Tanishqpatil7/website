@@ -1,18 +1,30 @@
-var menutoggle = document.querySelector('.toggle')
-menutoggle.onclick = function () {
-    menutoggle.classlist.toggle('active')
-}
-
-
-
-// add active class in selected list item
-var list = document.querySelectorAll('.list');
-for (let i = 0; i < list.lenght; i++) {
-    list[i].onclick = function () {
-        let j = 0;
-        while (j < list.lenght) {
-            list[j++].className = 'list';
-        }
-        list[i].className = 'list active';
+var on_off = 1;
+function hide() {
+    // if (on_off == true) {
+    //     document.getElementById('1').innerHTML = ""
+    //     document.getElementById('2').innerHTML = ""
+    //     document.getElementById('3').innerHTML = ""
+    //     document.getElementById('4').innerHTML = ""
+    //     on_off =false;
+    // }
+    console.log(on_off)
+    if (on_off == 1) {
+        on_off = 2
+        document.getElementById('li').style.borderRadius = '20px';
+        document.getElementById('li2').style.borderRadius = '20px';
+        document.getElementById('li3').style.borderRadius = '20px';
+        document.getElementById('li4').style.borderRadius = '20px';
+        document.getElementById('1').innerHTML = ""
+        document.getElementById('2').innerHTML = ""
+        document.getElementById('3').innerHTML = ""
+        document.getElementById('4').innerHTML = ""
     }
+    else {
+        document.getElementById('1').innerHTML = "Home"
+        document.getElementById('2').innerHTML = "Settings"
+        document.getElementById('3').innerHTML = "Contact"
+        document.getElementById('4').innerHTML = "Profile"
+        on_off = 1;
+    }
+
 }

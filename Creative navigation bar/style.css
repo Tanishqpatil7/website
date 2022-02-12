@@ -17,7 +17,7 @@ body
     top: 20px;
     left: 20px;
     bottom: 20px;
-    width: 300px;
+    width: fit-content;
     box-sizing: initial;
     border-left: 5px solid rgb(10,100,200);
     transition: width 0.5s;
@@ -27,12 +27,13 @@ body
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: fit-content;
     padding-left: 5px;
     padding-top: 40px;
 }
 .navigation ul li
 {
+    margin-top: 10px;
     position: relative;
     list-style: none;
     width: 100%;
@@ -71,9 +72,11 @@ body
 }
 .navigation ul li a .title
 {
+    width: fit-content;
     position: relative;
     display: block;
     padding-left: 10px;
+    padding-right: 5em;
     height: 60px;
     line-height: 60px;
     white-space: normal;
