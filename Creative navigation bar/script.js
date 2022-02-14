@@ -1,4 +1,5 @@
 var on_off = 1;
+const mouse = document.getElementById('mouse')
 function hide() {
     // if (on_off == true) {
     //     document.getElementById('1').innerHTML = ""
@@ -36,3 +37,8 @@ function hide() {
     }
 
 }
+document.addEventListener('mousemove',function(e){
+    console.log(e.clientY)
+    mouse.style.top = e.clientY +  -10 +'px'
+    mouse.style.left = e.clientX + -10 +'px'
+})
