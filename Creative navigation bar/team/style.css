@@ -1,0 +1,36 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.employ{
+    /* background-image: url(../profile/pycharm.svg); */
+    text-align:center;
+    color: aliceblue;
+    position: absolute;
+    background-color: black;
+    top: 10em;
+    /* background-image: url(../profile/pycharm.svg); */
+    width: 30%;
+    height: fit-content;
+    padding : 20px;
+    padding-top: 30px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    /* clip-path: circle(10% at 50% 50%); */
+    transition: 1s;
+}
+.employ::before{
+    content: "";
+    background-size: 0%;
+    /* border-radius: 100px; */
+    background-color: aqua;
+    position: absolute;
+    background: url(../profile/pycharm.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    top: -30%;
+    left: -1%;
+    width: 100px;
+    height: 100px;
+}
